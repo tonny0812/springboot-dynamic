@@ -39,6 +39,13 @@ public class ReloadController implements ApplicationContextAware {
         return "ok";
     }
 
+    @ApiOperation(nickname = "reload-url", value = "刷新容器")
+    @GetMapping("url")
+    public String getUrl(@RequestParam String dynamicJar) throws Exception {
+        moduleApplication.reloadJar(URLs.newURL(dynamicJar),applicationContext,sqlSessionFactory);
+        return "ok";
+    }
+
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;

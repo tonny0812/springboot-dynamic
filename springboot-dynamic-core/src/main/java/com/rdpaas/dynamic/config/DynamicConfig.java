@@ -59,7 +59,7 @@ public class DynamicConfig implements ApplicationContextAware {
                 /**
                  * 加载外部扩展jar
                  */
-                moduleApplication().reloadJar(new URL(dynamicJar),applicationContext,sqlSessionFactory);
+//                moduleApplication().reloadJar(new URL(dynamicJar),applicationContext,sqlSessionFactory);
             } catch (Exception e) {
                 logger.error("",e);
             }

@@ -10,6 +10,7 @@ package com.rdpaas.demo.ext.entity;
 public class User1 {
     private Long id;
     private String name;
+    private String remark="user1-1111";
 
     public Long getId() {
         return id;
@@ -27,9 +28,17 @@ public class User1 {
         this.name = name;
     }
 
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
     @Override
     public String toString() {
-        return "User{" +
+        return "User1{" +
             "id=" + id +
             ", name='" + name + '\'' +
             '}';

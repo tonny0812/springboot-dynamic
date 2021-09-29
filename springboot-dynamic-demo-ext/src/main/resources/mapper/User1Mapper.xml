@@ -3,7 +3,7 @@
 <mapper namespace="com.rdpaas.demo.ext.mapper.User1Mapper">
 
     <select id="get" resultType="com.rdpaas.demo.ext.entity.User1">
-        select * from tab_user where id = #{id}
+        select id, name, "test111" as remark from tab_user where id = #{id}
     </select>
 
 </mapper>
