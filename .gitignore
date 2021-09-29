@@ -26,6 +26,8 @@ hs_err_pid*
 
 **.iml
 
+**/target/**
+
 .idea/$PRODUCT_WORKSPACE_FILE$
 .idea/.gitignore
 .idea/codeStyles/
