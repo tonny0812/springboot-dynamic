@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   datasource:
@@ -11,7 +11,7 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
   type-aliases-package: com.example.entity
-  config-location: classpath:mybatis-config.xml
+#  config-location: classpath:mybatis-config.xml
 #showSql
 logging:
   level:

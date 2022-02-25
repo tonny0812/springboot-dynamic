@@ -59,7 +59,16 @@
             <artifactId>springboot-dynamic-core</artifactId>
             <version>1.0.0-BASE-SNAPSHOT</version>
         </dependency>
-
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--            <version>3.3.2</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-extension</artifactId>-->
+<!--            <version>3.4.3.3</version>-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <plugins>

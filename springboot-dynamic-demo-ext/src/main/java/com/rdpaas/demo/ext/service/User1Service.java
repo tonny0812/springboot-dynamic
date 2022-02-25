@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 public class User1Service {
 
@@ -15,6 +17,10 @@ public class User1Service {
     @Transactional
     public User1 get(Long id) {
         return user1Mapper.get(id);
+    }
+
+    public List<User1> list() {
+        return user1Mapper.selectList();
     }
 
 }

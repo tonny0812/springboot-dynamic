@@ -6,6 +6,8 @@ import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @ResponseBody
 @RequestMapping("/user1")
@@ -18,6 +20,12 @@ public class User1Controller {
     @GetMapping("/get")
     public User1 test(@RequestParam("id") Long id) {
         return user1Service.get(id);
+    }
+
+    @GetMapping("/list")
+    public List list() {
+        List<User1> list = user1Service.list();
+        return list;
     }
 
 }

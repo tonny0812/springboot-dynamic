@@ -6,4 +6,8 @@
         select id, name, "test111" as remark from tab_user where id = #{id}
     </select>
 
+    <select id="selectList" resultType="com.rdpaas.demo.ext.entity.User1">
+        select * from tab_user where 1=1;
+     </select>
+
 </mapper>
